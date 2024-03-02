@@ -47,14 +47,37 @@ During exploratory analysis of the credit card data, I confirmed that there were
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a9612c07-368d-48b1-bb57-afe6c7115908) <br>
 The transaction data also indicated that one branch does not have any transactions listed: Branch number 192. There were 952 distinct social security numbers, which matched the total number of customers in the customers table. After exploring the data, I made changes as needed, to meet the requirements of the mapping document. <br>
 <br>
-
+Creating the Database
+<br>
+Before loading the data, I created the database framework in order to specify the schema, including primary and foreign keys. I utilized Python and mysql connector to create the database and tables schema, and I specified default values as needed. The Python program for creating the MySQL database is here:
+INSERT LINK TO DB FILE <br>
+<br>
+Once I confirmed the creation of the database and made sure the schema was correct, I proceeded to load the branch, customers, and credit card data by running the below programs: <br>
+INSERT LINK TO Branch ETL <br>
+INSERT LINK TO Customers ETL <br>
+INSERT LINK TO Credit Card ETL <br>
+<br>
 
 **2. Application Front-End**<br>
+<br>
+INSERT LINK TO Front-end Application <br>
+<br>
 
 **3. Data Analysis and Visualizations** <br>
+<br>
+Now that the database has been constructed and bank employees are able to view and interact with the data, the business analyst team is seeking detailed data insights and visual representations to fulfill their information requests as listed below: <br>
+<br>
+*Which transaction type has the highest transaction count?* <br>
+<br>
+During exploratory analysis, I observed the count of transaction types. To visualize this, I used a column chart and arranged the types in descending order by count. Bills had the highest transaction count, although all types were closely clustered. Please note: the visual is zoomed in, magnifying the differences between the type counts. In reality, the differences are minimal, but stakeholders requested a closer examination.<br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/d94d8c1f-016e-41d3-86a2-27c0d61017eb) <br>
+<br>
 
-**4. Functional Requirements - LOAN Application Dataset**<br>
+
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/5794c117-df12-4737-bb10-33dd13e09e92)
+**4. Functional Requirements - LOAN Application Dataset**<br>
+
 
 **5. More Data Analysis and Visualizations** <br>
 
