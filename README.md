@@ -89,7 +89,12 @@ To identify the top 10 biggest spenders, I used a column chart with the customer
 <br>
 <br>
 **4. Functional Requirements - LOAN Application Dataset**<br>
-
+<br>
+The next task of the capstone project involved connecting to a REST API to access loan application data. I created a Python program and imported the request module to “get” the data from the following URL: https://raw.githubusercontent.com/platformps/LoanDataset/main/loan_data.json. <br>
+<br>
+I instructed the program to print the status code, which was 200, indicating that the request was successful. I then used response.json() to parse the response content as a json and assigned it to a variable. Next, I created a Spark Session and used PySpark to create a dataframe with the loan application data and loaded it as a new table into the creditcard_capstone database in MySQL. <br>
+<br>
+<br>
 
 **5. More Data Analysis and Visualizations** <br>
 
