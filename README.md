@@ -43,7 +43,7 @@ Similar to the Branch data, customer street addresses did not have street number
 <br>
 Credit Card Data Observations <br>
 <br>
-During exploratory analysis of the credit card data, I confirmed that there were no duplicate transaction IDs, and I noticed that branch codes and social security numbers related to the branch and customers data, respectively. I also noticed that there were 7 distinct transaction types, which I used as user options in the front-end application program during the transaction search. <br>
+During exploratory analysis of the credit card data, I confirmed that there were no duplicate transaction IDs, and I noted that branch codes and social security numbers are related to the branch and customers data, respectively. I also noticed that there were 7 distinct transaction types, which I used as user options in the front-end application program during the transaction search. <br>
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a9612c07-368d-48b1-bb57-afe6c7115908) <br>
 The transaction data also indicated that one branch does not have any transactions listed: Branch number 192. There were 952 distinct social security numbers, which matched the total number of customers in the customers table. After exploring the data, I made changes as needed, to meet the requirements of the mapping document. <br>
 <br>
@@ -73,9 +73,21 @@ During exploratory analysis, I observed the count of transaction types. To visua
 <br>
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/d94d8c1f-016e-41d3-86a2-27c0d61017eb) <br>
 <br>
-
-
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/5794c117-df12-4737-bb10-33dd13e09e92)
+<br>
+*What are the top 10 states with the highest number of customers?* <br>
+<br>
+For this visualization, I used a bar chart and arranged the states by count of customer social security numbers in descending order. I filtered to display only the top 10. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/63cec576-8a76-42a4-a7a4-d53fcf7c95d2)
+<br>
+<br>
+*Identify the top 10 customers with the highest total transaction amounts.* <br>
+<br>
+To identify the top 10 biggest spenders, I used a column chart with the customers’ social security numbers on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a8fa4923-0395-40f8-bbe9-2f95bed3c9bf) <br>
+<br>
+<br>
 **4. Functional Requirements - LOAN Application Dataset**<br>
 
 
