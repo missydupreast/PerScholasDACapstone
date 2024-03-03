@@ -70,10 +70,37 @@ INSERT LINK TO Credit Card ETL <br>
 <br>
 INSERT LINK TO Front-end Application <br>
 <br>
+After successful completion of the database, the next task was to create a front-end application for bank employees to be able to access, view, and modify the data. The program I created started by prompting the bank employee to log in. This is important to safeguard sensitive information. If the user fails to provide the proper credentials, the program will not continue. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/4309a0ad-a7a8-40a4-ac23-d2673ef5ad81) <br>
+<br>
+Once logged in, the main menu will be displayed, and the user will be able to choose what they would like to do. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/0d2c9d28-9ff6-4fd0-ab72-aace318cecbe) <br>
+<br>
+For each menu option, I created functions to carry out the requested tasks and additional functions to perform operations such as validating zip codes, dates, and customer social security numbers. To assist in navigation, throughout the program I gave the user the option of returning to the main menu. I also provided sub-menus in some cases to offer options to the user. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/27dc85d1-0092-4669-8b10-334197e64d4a) <br>
+<br>
+I used mysql.connector to query the database to retrieve the user’s request. If no results were found, or if the user’s input was invalid, the user would be notified and be prompted to try again. If the user’s request returned results, I used the tabulate module to arrange the data in an easy-to-read table format. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/b715ea2c-4d2e-4ce2-9dfa-6934bd6b3b7e) <br>
+<br>
+I incorporated elements of data cleaning within the program to help maintain data integrity anytime the user modified data. For example, the proper format for customer phone number in the database is set to (XXX)XXX-XXXX. If the user chooses to modify the phone number, the program will take care of the formatting for them, as long as they enter 10 digits. The code I used will strip away any punctuation or spaces from the user’s input and check to make sure it is 10 digits long. If it is not, the user will be told it is an invalid input and be prompted to try again. If it is valid, I used indexing and f-string formatting to put the phone number in the proper format. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/9cd68e0c-3f11-4708-a3d5-6d47de5f5b94) <br>
+<br>
+For the “generate monthly credit card bill” option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line introducing the bill for the given credit card number and date. Then I used the tabulate function to display the results of the transactions ordered by date, and I used an f-string to display the total amount due at the end. <br>
+<br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/ac8d2bcf-bccf-4884-9eef-bc054fe33ed6) <br>
+<br>
+Once a user is finished with the program, from the main menu they have the option of logging out and exiting. When they select this option, the mysql connection and cursor will close, and the program will end. <br>
+<br>
+<br>
 
 **3. Data Analysis and Visualizations** <br>
 <br>
-Now that the database has been constructed and bank employees are able to view and interact with the data, the business analyst team is seeking detailed data insights and visual representations to fulfill their information requests as listed below: <br>
+After the database had been constructed and bank employees were able to view and interact with the data, the business analyst team sought detailed data insights and visual representations of their information requests as listed below: <br>
 <br>
 *Which transaction type has the highest transaction count?* <br>
 <br>
