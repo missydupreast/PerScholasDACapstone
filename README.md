@@ -108,12 +108,12 @@ For the “generate monthly credit card bill” option, I used multiple queries 
 
 Once a user is finished with the program, from the main menu they have the option of logging out and exiting. When they select this option, the mysql connection and cursor will close, and the program will end. <br>
 <br>
-<br>
 
 #### **3. Data Analysis and Visualizations** <br>
 
 <br>
 After the database had been constructed and bank employees were able to view and interact with the data, the business analyst team sought detailed data insights and visual representations of their information requests as listed below: <br>
+<br>
 <br>
 
 *Which transaction type has the highest transaction count?* <br>
@@ -133,7 +133,6 @@ For this visualization, I used a bar chart and arranged the states by count of c
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a8fa4923-0395-40f8-bbe9-2f95bed3c9bf) <br>
 To identify the top 10 biggest spenders, I used a column chart with the customers’ social security numbers on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
 <br>
-<br>
 
 #### **4. Functional Requirements - LOAN Application Dataset**<br>
 
@@ -141,7 +140,6 @@ To identify the top 10 biggest spenders, I used a column chart with the customer
 The next task of the capstone project involved connecting to a REST API to access loan application data. I created a Python program and imported the request module to “get” the data from the following URL: https://raw.githubusercontent.com/platformps/LoanDataset/main/loan_data.json. <br>
 <br>
 I instructed the program to print the status code, which was 200, indicating that the request was successful. I then used response.json() to parse the response content as a json and assigned it to a variable. Next, I created a Spark Session and used PySpark to create a dataframe with the loan application data and loaded it as a new table into the creditcard_capstone database in MySQL. <br>
-<br>
 <br>
 
 #### **5. More Data Analysis and Visualizations** <br>
@@ -182,4 +180,9 @@ I added a new column to the credit card table in order to add the state name tha
 
 ### **CONCLUSION**<br>
 
+Utilizing tools such as Python, MySQL, PySpark, Jira, and Power BI, this capstone project has given me the opportunity to apply and refine the skills I have learned throughout the Per Scholas Data Analytics course. The tasks involved in the capstone allowed me to showcase my ability to extract, transform, and clean data, build a database, write a user-friendly application program, perform analyses, and deliver clear, insightful visualizations. This project gave me practical, hands-on experience in a scenario involving a Credit Card Bank, where I was able to tackle and overcome real-world challenges, make data-driven decisions, and drive actionable business outcomes. <br>
+<br>
+
 ### **APPENDIX**<br>
+
+<br>
