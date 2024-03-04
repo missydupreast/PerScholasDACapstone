@@ -69,20 +69,21 @@ The transaction data also indicated that one branch does not have any transactio
 **Creating the Database** <br>
 
 Before loading the data, I created the database framework in order to specify the schema, including primary and foreign keys. I utilized Python and mysql connector to create the database and tables schema, and I specified default values as needed. The Python program for creating the MySQL database is here:
-INSERT LINK TO DB FILE <br>
+[Database Creation](DBcreation.py). <br>
 <br>
 Once I confirmed the creation of the database and made sure the schema was correct, I proceeded to load the branch, customers, and credit card data by running the below programs: <br>
-INSERT LINK TO Branch ETL <br>
-INSERT LINK TO Customers ETL <br>
-INSERT LINK TO Credit Card ETL <br>
+[Branch Data ETL](Branch_ETL.py) <br>
+[Customers Data ETL](Customers_ETL.py) <br>
+[Credit Card Data ETL](CreditCard_ETL.py) <br>
 <br>
 
 #### **2. Application Front-End**<br>
 
 <br>
-INSERT LINK TO Front-end Application <br>
+
+[Front-end Application](FrontEndApplication.py) <br>
 <br>
-After successful completion of the database, the next task was to create a front-end application for bank employees to be able to access, view, and modify the data. The program I created started by prompting the bank employee to log in. This is important to safeguard sensitive information. If the user fails to provide the proper credentials, the program will not continue. <br>
+After successful completion of the database, the next task was to create a front-end application for bank employees to be able to access, view, and modify the data. The program I created starts by prompting the bank employee to log in. This is important to safeguard sensitive information. If the user fails to provide the proper credentials, the program will not continue. <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/4309a0ad-a7a8-40a4-ac23-d2673ef5ad81) <br>
 
@@ -140,6 +141,9 @@ To identify the top 10 biggest spenders, I used a column chart with the customer
 The next task of the capstone project involved connecting to a REST API to access loan application data. I created a Python program and imported the request module to “get” the data from the following URL: https://raw.githubusercontent.com/platformps/LoanDataset/main/loan_data.json. <br>
 <br>
 I instructed the program to print the status code, which was 200, indicating that the request was successful. I then used response.json() to parse the response content as a json and assigned it to a variable. Next, I created a Spark Session and used PySpark to create a dataframe with the loan application data and loaded it as a new table into the creditcard_capstone database in MySQL. <br>
+<br>
+
+[Loan Application Data Processing](loan_api_data_processing.py) <br>
 <br>
 
 #### **5. More Data Analysis and Visualizations** <br>
