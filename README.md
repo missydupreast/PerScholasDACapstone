@@ -190,3 +190,11 @@ Utilizing tools such as Python, MySQL, PySpark, Jira, and Power BI, this capston
 ### **APPENDIX**<br>
 
 <br>
+Below are the json files I was given for the credit card system datasets. These are the files that I extracted and transformed to build the credit card database:<br>
+
+[Branch Data](CreditCardDataset_jsons/cdw_sapp_branch.json) <br>
+[Customers Data](CreditCardDataset_jsons/cdw_sapp_custmer.json) <br>
+[Credit Card Data](CreditCardDataset_jsons/cdw_sapp_credit.json) <br>
+
+
+
