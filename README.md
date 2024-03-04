@@ -189,12 +189,24 @@ Utilizing tools such as Python, MySQL, PySpark, Jira, and Power BI, this capston
 
 ### **APPENDIX**<br>
 
-<br>
 Below are the json files I was given for the credit card system datasets. These are the files that I extracted and transformed to build the credit card database:<br>
 
-[Branch Data](CreditCardDataset_jsons/cdw_sapp_branch.json) <br>
-[Customers Data](CreditCardDataset_jsons/cdw_sapp_custmer.json) <br>
-[Credit Card Data](CreditCardDataset_jsons/cdw_sapp_credit.json) <br>
+[Branch Data json](CreditCardDataset_jsons/cdw_sapp_branch.json) <br>
+[Customers Data json](CreditCardDataset_jsons/cdw_sapp_custmer.json) <br>
+[Credit Card Data json](CreditCardDataset_jsons/cdw_sapp_credit.json) <br>
 
 
+<br>
+I transformed the extracted data according to the mapping document provided below: <br>
+<br>
+[Mapping Document](Capstone Mapping Document.xlsx) <br>
+
+<br>
+After creating the credit card database, I exported each table as a csv file to import them into Power PI. When exporting tables as csv files from MySQL, the default is semicolons instead of commas. This can be changed, but our stakeholders suggested to keep the default. <br>
+<br>
+
+[Branch Table csv](CSV_Exports/cdw_sapp_branch.csv) <br>
+[Customers Table csv](CSV_Exports/cdw_sapp_customer.csv) <br>
+[Credit Card Table csv](CSV_Exports/cdw_sapp_credit_card.csv) <br>
+[Loan Application Table csv](CSV_Exports/cdw_sapp_loan_application.csv) <br>
 
