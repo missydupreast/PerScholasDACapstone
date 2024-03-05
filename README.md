@@ -18,9 +18,14 @@ In partial fulfillment of the requirements for the Per Scholas Data Analytics ce
 
 ### **PRIMER ACTIVITIES: The Data Detective**<br>
 
+
+The capstone project began with a series of primer activities called [The Data Detective Capstone](DataDetective). These activities were defined in issues/tasks that were assigned to Jira sprints as summarized below:
+
 **Summary of Jira Sprints**<br>
-<br>
-<br>
+
+
+[ACT 304](DataDetective/ACT 304) 
+
 
 ### **CORE CAPSTONE COMPONENTS** <br>
 
@@ -99,7 +104,9 @@ I used mysql.connector to query the database to retrieve the user’s request. I
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/b715ea2c-4d2e-4ce2-9dfa-6934bd6b3b7e) <br>
 
-I incorporated elements of data cleaning within the program to help maintain data integrity anytime the user modified data. For example, the proper format for customer phone number in the database is set to (XXX)XXX-XXXX. If the user chooses to modify the phone number, the program will take care of the formatting for them, as long as they enter 10 digits. The code I used will strip away any punctuation or spaces from the user’s input and check to make sure it is 10 digits long. If it is not, the user will be told it is an invalid input and be prompted to try again. If it is valid, I used indexing and f-string formatting to put the phone number in the proper format. <br>
+One obstacle I faced while developing this program arose when I tried to modularize my code by placing functions in a separate file for import. Even though I established a global cursor, I continued to get errors that the cursor was not defined. In order to move forward and meet the deadline, I made the decision to include all of the cursor-related functions in my main program, rather than import them as a separate module. This is something I am noting that can be revisited at a a later time to be improved.<br>
+<br>
+Throughout the program, I incorporated elements of data cleaning within the program to help maintain data integrity anytime the user modified data. For example, the proper format for customer phone number in the database is set to (XXX)XXX-XXXX. If the user chooses to modify the phone number, the program will take care of the formatting for them, as long as they enter 10 digits. The code I used will strip away any punctuation or spaces from the user’s input and check to make sure it is 10 digits long. If it is not, the user will be told it is an invalid input and be prompted to try again. If it is valid, I used indexing and f-string formatting to put the phone number in the proper format. <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/9cd68e0c-3f11-4708-a3d5-6d47de5f5b94) <br>
 
@@ -199,7 +206,8 @@ Below are the json files I was given for the credit card system datasets. These 
 <br>
 I transformed the extracted data according to the mapping document provided below: <br>
 <br>
-[Mapping Document](Capstone Mapping Document.xlsx) <br>
+
+[Mapping Document](Mapping_Document.pdf) <br>
 
 <br>
 After creating the credit card database, I exported each table as a csv file to import them into Power PI. When exporting tables as csv files from MySQL, the default is semicolons instead of commas. This can be changed, but our stakeholders suggested to keep the default. <br>
