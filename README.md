@@ -23,9 +23,21 @@ The capstone project began with a series of primer activities called [The Data D
 
 **Summary of Jira Sprints**<br>
 
+[ACT 304](DataDetective/ACT_304) : Relational Databases and SQL <br>
 
-[ACT 304](DataDetective/ACT 304) 
+[ACT 400](DataDetective/ACT_400) : Advanced RDBMS and SQL <br>
 
+[Bonus 304-400](DataDetective/Bonus_304_400) : Bonus SQL Activities (with Indexes, Views, and Triggers) <br>
+
+[ACT 401](DataDetective/ACT_401) : Python Programming and Database Integration<br>
+
+[ACT 402](DataDetective/ACT_402) : Overview of Spark and Spark SQL) <br>
+
+[ACT 403](DataDetective/ACT_403) : Intro to Data Analysis, Power BI, and Data Visualizations<br>
+
+[ACT 404](DataDetective/ACT_404) : Power BI <br> 
+
+<br> 
 
 ### **CORE CAPSTONE COMPONENTS** <br>
 
