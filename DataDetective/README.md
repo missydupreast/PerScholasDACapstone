@@ -1,5 +1,5 @@
 # DataDetectiveCapstone
-(In progress - will be completed in March 2024)
+Completed March 2024
 
 ## Capstone Project: The Data Detective Agency
 ### Introduction
