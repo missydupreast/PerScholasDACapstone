@@ -18,9 +18,14 @@ In partial fulfillment of the requirements for the Per Scholas Data Analytics ce
 
 ### **PRIMER ACTIVITIES: The Data Detective**<br>
 
+
+The capstone project began with a series of primer activities called [The Data Detective Capstone](DataDetective). These activities were defined in issues/tasks that were assigned to Jira sprints as summarized below:
+
 **Summary of Jira Sprints**<br>
-<br>
-<br>
+
+
+[ACT 304](DataDetective/ACT 304) 
+
 
 ### **CORE CAPSTONE COMPONENTS** <br>
 
