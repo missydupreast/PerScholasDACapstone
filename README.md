@@ -35,13 +35,32 @@ After discovering a compromised database, the agency sought the means to trace u
 
 [Bonus 304-400](DataDetective/Bonus_304_400) : Bonus SQL Activities (with Indexes, Views, and Triggers) <br>
 
+These bonus exercises included inserting data into our existing Data Detective database, running queries, adding indexes to enhance query performance, creating views, and implementing triggers. <br>
+<br>
+
 [ACT 401](DataDetective/ACT_401) : Python Programming and Database Integration<br>
+
+The Data Detective agency requested a list of all cases and evidence information from the MySQL database. For this task, I utilized the mysql.connector library in Python to create a script to retrieve the needed data. <br>
+<br>
 
 [ACT 402](DataDetective/ACT_402) : Overview of Spark and Spark SQL) <br>
 
-[ACT 403](DataDetective/ACT_403) : Intro to Data Analysis, Power BI, and Data Visualizations<br>
+Additional data was collected from various sources, and the agency needed to utilize Apache Spark to perform Extraction, Transformation, and Loading processes (ETL). In Python, I used the PySpark library to create a Spark Session, load the data from the different sources, transform and combine the data, and export the cleaned data into a Parquet file. <br>
+<br>
+
+[ACT 403](DataDetective/ACT_403) : Intro to Data Analysis, Power BI, and Data Visualizations <br>
+
+This task addressed the agency's goal of analyzing financial transactions for potential fraud. Using Power BI, I connected to a dataset on the web and performed analysis by answering a series of questions provided by the agency. I created the below report to summarize and visualize the agency’s requests.<br>
+
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/388c564b-8a79-4c54-b3ca-522cee9a6dd0)  <br>
+ 
+ <br>
 
 [ACT 404](DataDetective/ACT_404) : Power BI <br> 
+
+The final primer activity involved importing json data into Power BI, performing transformations, and creating calculations to allow for exploration and analysis. The transformed data is structured for interactive visualization, enhancing decision-making and insights. <br> 
+
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/6634b88e-d4ce-4222-951d-780b3a05b549) <br> 
 
 <br> 
 
