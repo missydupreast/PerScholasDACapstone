@@ -19,13 +19,19 @@ In partial fulfillment of the requirements for the Per Scholas Data Analytics ce
 ### **PRIMER ACTIVITIES: The Data Detective**<br>
 
 
-The capstone project began with a series of primer activities called [The Data Detective Capstone](DataDetective). These activities were defined in issues/tasks that were assigned to Jira sprints as summarized below:
+The capstone project began with a series of primer activities called [The Data Detective Capstone](DataDetective). In Jira, these activities were defined in issues/tasks that were assigned to sprints as summarized below:
 
 **Summary of Jira Sprints**<br>
 
 [ACT 304](DataDetective/ACT_304) : Relational Databases and SQL <br>
 
+The Data Detective Agency was tasked with investigating missing persons cases, necessitating an analysis of connections between individuals, locations, and events. The objective was to analyze these connections within the agency’s database. I had to run a SQL query to uncover the relevant information pertaining to the case. <br>
+<br>
+
 [ACT 400](DataDetective/ACT_400) : Advanced RDBMS and SQL <br>
+
+After discovering a compromised database, the agency sought the means to trace unauthorized changes effectively. In response, I was assigned the task of implementing a trigger to activate after any insertion, deletion, or update to the evidence table. This measure proved to enhance the agency’s ability to monitor and track modifications in the event of a security breach. <br>
+<br>
 
 [Bonus 304-400](DataDetective/Bonus_304_400) : Bonus SQL Activities (with Indexes, Views, and Triggers) <br>
 
