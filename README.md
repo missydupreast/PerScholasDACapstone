@@ -86,7 +86,7 @@ Once I confirmed that these locations were missing the leading zero, I used PySp
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/c94b301a-1882-47d2-b585-64764d83d2b1) <br>
 
 
-I also noticed that the street addresses do not contain street numbers, and city names that are more than one word do not have a space between words. These are minor issues, however, that are beyond the scope of the project and not a priority for our stakeholders. I am making note to revisit this at a later time. Other changes were made as needed to satisfy the requirements specified in the mapping document.   <br>
+I also noticed that the street addresses do not contain street numbers, and city names that are more than one word do not have a space between words. These are minor issues, however, that are beyond the scope of the project and not a priority for our stakeholders. I am making note to revisit this at a later time. Other changes were made as needed to satisfy the requirements specified in the mapping document (see appendix).   <br>
 <br>
 
 **Customer Data Observations** <br>
@@ -137,7 +137,7 @@ For each menu option, I created functions to carry out the requested tasks and a
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/27dc85d1-0092-4669-8b10-334197e64d4a) <br>
 
-I used mysql.connector to query the database to retrieve the user’s request. If no results were found, or if the user’s input was invalid, the user would be notified and be prompted to try again. If the user’s request returned results, I used the tabulate module to arrange the data in an easy-to-read table format. <br>
+I used mysql.connector to query the database to retrieve the user’s request. If no results are found, or if the user’s input is invalid, the user will be notified and be prompted to try again. If the user’s request returns results, they will be displayed in an easy-to-read table format, by my implementation of the tabulate function. <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/b715ea2c-4d2e-4ce2-9dfa-6934bd6b3b7e) <br>
 
@@ -147,7 +147,9 @@ Throughout the program, I incorporated elements of data cleaning within the prog
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/9cd68e0c-3f11-4708-a3d5-6d47de5f5b94) <br>
 
-For the “generate monthly credit card bill” option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line introducing the bill for the given credit card number and date. Then I used the tabulate function to display the results of the transactions ordered by date, and I used an f-string to display the total amount due at the end. <br>
+Furthermore, anytime a user modifies customer details, the "LAST_UPDATED" column will be updated to the current timestamp. I achieved this by creating a function that I added to each modification function. <br>
+
+For the “generate monthly credit card bill” option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line that introduces the bill for the given credit card number and date. I then used the tabulate function to display the results of the transactions and ordered them by date. I used an f-string to display the total amount due at the bottom of the bill. <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/ac8d2bcf-bccf-4884-9eef-bc054fe33ed6) <br>
 
@@ -170,13 +172,13 @@ During exploratory analysis, I observed the count of transaction types. To visua
 *What are the top 10 states with the highest number of customers?* <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/63cec576-8a76-42a4-a7a4-d53fcf7c95d2) <br>
-For this visualization, I used a bar chart and arranged the states by count of customer social security numbers in descending order. I filtered to display only the top 10. <br>
+For this visualization, I used a bar chart and arranged the states by count of customer social security numbers in descending order. I filtered to display only the top 10. While a map visualization may have been a good choice for showing the geographical dispersion of customer locations, the bar chart was more effective at representing the comparison of customer count by location. <br>
 <br>
 
 *Identify the top 10 customers with the highest total transaction amounts.* <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a8fa4923-0395-40f8-bbe9-2f95bed3c9bf) <br>
-To identify the top 10 biggest spenders, I used a column chart with the customers’ social security numbers on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
+To identify the top 10 biggest spenders, I used a column chart with the customers’ social security numbers on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending order and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
 <br>
 
 #### **4. Functional Requirements - LOAN Application Dataset**<br>
