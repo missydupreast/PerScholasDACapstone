@@ -147,7 +147,7 @@ Throughout the program, I incorporated elements of data cleaning within the prog
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/9cd68e0c-3f11-4708-a3d5-6d47de5f5b94) <br>
 
-Furthermore, anytime a user modifies customer details, the "LAST_UPDATED" column will be updated to the current timestamp. I achieved this by creating a function that I added to each modification function. <br>
+Furthermore, anytime a user modifies customer details, the "LAST_UPDATED" column will be updated to the current timestamp. I achieved this by creating a function that I called within each modification function. <br>
 
 For the “generate monthly credit card bill” option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line that introduces the bill for the given credit card number and date. I then used the tabulate function to display the results of the transactions and ordered them by date. I used an f-string to display the total amount due at the bottom of the bill. <br>
 
