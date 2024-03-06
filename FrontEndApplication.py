@@ -120,6 +120,7 @@ def zip_date_transactions():
     zip_date_query = """SELECT ccd.*, c.CUST_ZIP FROM CDW_SAPP_CREDIT_CARD ccd 
                         JOIN CDW_SAPP_CUSTOMER c ON ccd.CUST_CC_NO = c.Credit_card_no
                         WHERE c.CUST_ZIP = %s AND TIMEID LIKE %s
+                        ORDER BY TIMEID DESC
                     """ 
     cursor.execute(zip_date_query, (user_zip, userdate_wildcard))
     results = cursor.fetchall()
