@@ -149,7 +149,9 @@ Throughout the program, I incorporated elements of data cleaning within the prog
 
 Furthermore, anytime a user modifies customer details, the "LAST_UPDATED" column will be updated to the current timestamp. I achieved this by creating a function that I called within each modification function. <br>
 
-For the “generate monthly credit card bill” option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line that introduces the bill for the given credit card number and date. I then used the tabulate function to display the results of the transactions and ordered them by date. I used an f-string to display the total amount due at the bottom of the bill. <br>
+In the event a user attempts to modify a customer's social security number, an error will occur because this violates a foreign key constraint. I added error handling to address this, so if the user attempts to modify the SSN, the following message will appear: "Sorry, cannot edit a parent row. A foreign key constraint fails," and the program will continue. <br>
+
+For the “generate monthly credit card bill” menu option, I used multiple queries in order to display an accurate-looking bill. I used an f-string to display the opening line that introduces the bill for the given credit card number and date. I then used the tabulate function to display the results of the transactions and ordered them by date. I used an f-string to display the total amount due at the bottom of the bill. <br>
 
 ![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/ac8d2bcf-bccf-4884-9eef-bc054fe33ed6) <br>
 
