@@ -165,7 +165,7 @@ def trans_by_type():
     else:
         print("Not a valid choice. Please try again.")
         print("")
-        trans_by_type()
+        return trans_by_type()
 
 
     # search for the type in the credit card table
@@ -181,7 +181,7 @@ def trans_by_type():
         type_totals = cursor.fetchall()
         
         header_row = [i[0] for i in cursor.description]
-        print(tabulate(type_totals, headers=header_row))
+        print(tabulate(type_totals, headers=header_row, floatfmt=".2f"))
         print("")
     else:
         print("Type not found")
