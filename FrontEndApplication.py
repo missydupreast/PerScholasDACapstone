@@ -147,7 +147,6 @@ def trans_by_type():
     trans_type = input("What type of transaction are you searching for? \n    1 - Bills \n    2 - Education \n    3 - Entertainment \n    4 - Gas \n    5 - Grocery \n    6 - Healthcare \n    7 - Test \n    0 - Return to the Main Menu \n    Enter the number that corresponds to your choice: ")
 
     if trans_type == "0":
-        display_mainmenu()
         return
     elif trans_type == "1":
         trans_type = "Bills"
