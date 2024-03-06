@@ -361,10 +361,13 @@ def mod_cust_ssn(cust):
                             SET SSN = %s
                             WHERE SSN = %s
                             """
-            cursor.execute(mod_ssn, (clean_new_SSN, cust))
-            connection.commit()
-            update_timestamp(cust)
-            print("SSN updated successfully!")
+            try:
+                cursor.execute(mod_ssn, (clean_new_SSN, cust))
+                connection.commit()
+                update_timestamp(cust)
+                print("SSN updated successfully!")
+            except Exception as e:
+                print("Sorry, cannot edit a parent row. A foreign key constraint fails. ")
             return
         else:
             print("Not a valid SSN. Please try again.")
@@ -401,7 +404,7 @@ def mod_cust_city(cust):
 
 ######################################################## 
 def mod_cust_state(cust):
-    new_state = input("What would you like to change the state to? \n(Type 0 to go back to the previous menu) \n")
+    new_state = input("What would you like to change the state to? \n(Type 0 to go back to the previous menu) \n").upper()
     if new_state == "0":
         return
     
