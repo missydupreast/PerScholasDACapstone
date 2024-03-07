@@ -113,7 +113,7 @@ The transaction data also indicated that one branch does not have any transactio
 Before loading the data, I created the database framework in order to specify the schema, including primary and foreign keys. I utilized Python and mysql connector to create the database and tables schema, and I specified default values as needed. The Python program for creating the MySQL database is here:
 [Database Creation](DBcreation.py). <br>
 <br>
-Once I confirmed the creation of the database and made sure the schema was correct, I proceeded to load the branch, customers, and credit card data by running the below programs: <br>
+Once I confirmed the creation of the database and made sure the schema was correct, I proceeded to load the branch, customers, and credit card data by running the programs below. It is important to load the credit card table last, as it contains foreign keys that are dependent upon the primary keys of the branch and customers tables. <br>
 [Branch Data ETL](Branch_ETL.py) <br>
 [Customers Data ETL](Customers_ETL.py) <br>
 [Credit Card Data ETL](CreditCard_ETL.py) <br>
