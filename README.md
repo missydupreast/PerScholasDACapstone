@@ -179,8 +179,8 @@ For this visualization, I used a bar chart and arranged the states by count of c
 
 *Identify the top 10 customers with the highest total transaction amounts.* <br>
 
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/a8fa4923-0395-40f8-bbe9-2f95bed3c9bf) <br>
-To identify the top 10 biggest spenders, I used a column chart with the customers’ social security numbers on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending order and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/fa9bedd7-2513-47b6-8ebd-e0e3c3a6667b) <br>
+To identify the top 10 biggest spenders, I used a column chart with the customers’ names on the x-axis, and the sum of their transactions on the y-axis. I sorted by descending order and filtered to show only the top 10. Please note: the visual is zoomed in, which magnifies the differences between the transaction amounts. <br>
 <br>
 
 #### **4. Functional Requirements - LOAN Application Dataset**<br>
@@ -202,7 +202,7 @@ Once the loan application table was complete and had been loaded into the MySQL 
 
 *What percentage of applications were approved for self-employed applicants?* <br>
 
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/3a2987d4-2851-4cb6-89af-9ff5013f5b1f)
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/dd69bb27-1c3e-4880-b26d-1c87ad2c965e)
 <br>
 I created new measures to calculate the total of approved and rejected self-employed applicants and added those measures to the pie chart. In our dataset, there are 70 self-employed applicants, 46 were approved for loans, and 24 were rejected. The percentage of self-employed applicants who were approved for loans is 65.71%.
 <br>
@@ -210,21 +210,21 @@ I created new measures to calculate the total of approved and rejected self-empl
 <br>
 *What is the percentage of rejection for married male applicants?* <br>
 <br>
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/72e0f667-e1c8-43e1-b2d2-78ba5b84d127)
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/fd05f9c4-21cb-463e-b429-2b3c4b318469)
 <br>
 I created new measures to calculate the total of approved and rejected married male applicants and added those measures to the pie chart. In our dataset, there are 306 married male applicants, 219 were approved for loans, and 87 were rejected. The percentage of married male applicants who were rejected is 28.43%. <br>
 <br>
 <br>
 *What are the top three months with the largest volume of transaction data?* <br>
 <br>
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/5263e69d-5c9c-4274-8148-f2fd25041402)
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/c476de76-52ec-47b8-ba89-0ec245bed45d)
 <br>
 For this analysis, I had to create a new column in order to extract the month name from the TIMEID column. Then I used a column chart, with month on the x-axis and count of transaction IDs on the y-axis. I filtered to show the three months with the highest counts of transactions. Please note that this visual is zoomed in, which magnifies the differences between the months. The actual difference between the months is minimal; February has the most transactions by 13 transactions. May and October have the same count of transactions. <br>
 <br>
 <br>
 *Which branch processed the highest total dollar value of healthcare transactions?* <br>
 <br>
-![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/b5a3b1a5-f756-42aa-b4a7-c212330a717c)
+![image](https://github.com/missydupreast/PerScholasDACapstone/assets/98125097/8c54b032-c497-4d5c-a021-b5a0d4dac3b2)
 <br>
 I added a new column to the credit card table in order to add the state name that corresponds to the branch code. I put the branch code and state abbreviation on the x-axis of this column chart, and the y-axis is the sum of transactions, filtered to show only healthcare. I also filtered to show only the top five and sorted in descending order by transaction value. <br>
 <br>
